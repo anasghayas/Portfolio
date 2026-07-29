@@ -71,7 +71,7 @@ export default function Hero() {
         </div>
 
         {/* Photo Area */}
-        <motion.div variants={itemVariants} className="relative w-[260px] md:w-[320px] shrink-0 mt-8 md:mt-0">
+        <motion.div variants={itemVariants} className="relative w-[200px] md:w-[240px] shrink-0 mt-8 md:mt-0">
           <div className="absolute -top-8 right-0 font-mono text-[10px] md:text-xs uppercase text-[var(--text-muted)] tracking-widest flex items-center gap-1">
             <MapPin size={14} />
             {personalInfo.location}
@@ -80,7 +80,7 @@ export default function Hero() {
           <div className="bg-[#fcfaf7] border-2 border-[var(--text-primary)] p-3 pb-12 shadow-[var(--shadow-md)] transform rotate-3 hover:rotate-1 hover:shadow-[var(--shadow-lg)] transition-all duration-300">
             <div className="w-full aspect-[4/5] bg-[var(--bg-secondary)] border border-[var(--border)] flex items-center justify-center overflow-hidden relative group">
               <img 
-                src="/profile.jpg" 
+                src="/profile.png" 
                 alt={personalInfo.name} 
                 className="w-full h-full object-cover z-10" 
                 onError={(e) => {
