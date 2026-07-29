@@ -1,24 +1,13 @@
 import './App.css'
 import Navbar from './components/Navbar'
+import Hero from './components/Hero'
 
 function App() {
   return (
     <>
       <Navbar />
       <main>
-        {/* Temporarily keeping the hero text here to see it below navbar */}
-        <div style={{
-          minHeight: '100vh',
-          display: 'flex',
-          alignItems: 'center',
-          justifyContent: 'center',
-          fontFamily: 'var(--font-mono)',
-          color: 'var(--text-primary)',
-          fontSize: '1.5rem',
-        }}>
-          ANAS GHAYAS_<span className="cursor-blink text-[var(--accent)]">|</span>
-        </div>
-
+        <Hero />
         {/* Dummy sections so scroll works */}
         <section id="about" className="h-screen bg-[var(--bg-card)] flex items-center justify-center font-mono text-2xl text-[var(--text-primary)]">01. About (Coming Soon)</section>
         <section id="skills" className="h-screen flex items-center justify-center font-mono text-2xl text-[var(--text-primary)]">02. Skills (Coming Soon)</section>
