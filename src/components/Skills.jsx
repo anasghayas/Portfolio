@@ -23,7 +23,7 @@ export default function Skills() {
   };
 
   return (
-    <section id="skills" className="py-20 border-b border-[var(--border)]">
+    <section id="skills" className="border-b border-[var(--border)]">
       <SectionHeading number="02" title="Skills" />
 
       <div className="grid grid-cols-1 md:grid-cols-3 gap-10 items-start">

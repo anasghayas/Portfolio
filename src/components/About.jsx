@@ -13,7 +13,7 @@ export default function About() {
   };
 
   return (
-    <section id="about" className="py-20 border-b border-[var(--border)]">
+    <section id="about" className="border-b border-[var(--border)]">
       <SectionHeading number="01" title="About" />
       
       <motion.div 

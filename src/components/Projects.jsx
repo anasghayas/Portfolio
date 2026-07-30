@@ -4,7 +4,7 @@ import ProjectCard from './ProjectCard';
 
 export default function Projects() {
   return (
-    <section id="projects" className="py-20 border-b border-[var(--border)]">
+    <section id="projects" className="border-b border-[var(--border)]">
       <SectionHeading number="03" title="Projects" />
       
       <div className="flex flex-col gap-8">
