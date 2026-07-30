@@ -27,7 +27,7 @@ export default function Navbar() {
     setMobileMenuOpen(false);
     const element = document.getElementById(id);
     if (element) {
-      const offset = 80; // navbar height
+      const offset = 64; // navbar height (h-16 = 64px)
       const bodyRect = document.body.getBoundingClientRect().top;
       const elementRect = element.getBoundingClientRect().top;
       const elementPosition = elementRect - bodyRect;
@@ -49,7 +49,7 @@ export default function Navbar() {
         isScrolled ? 'bg-[var(--bg-primary)]/80 backdrop-blur-md shadow-[var(--shadow-sm)]' : 'bg-transparent'
       }`}
     >
-      <div className="max-w-[1100px] mx-auto px-6 h-20 flex items-center justify-between">
+      <div className="max-w-[1100px] mx-auto px-6 h-16 flex items-center justify-between">
         {/* Logo */}
         <div 
           className="font-mono text-xl font-bold cursor-pointer flex items-center"
