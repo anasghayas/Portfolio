@@ -30,7 +30,7 @@ export default function Experience() {
     },
     {
       role: "Club Organizer",
-      organization: "Society for Math & Computing (SMC)",
+      organization: "IET & IEEE",
       description: leadership[1],
       duration: "2025"
     },
