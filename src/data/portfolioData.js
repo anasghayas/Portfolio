@@ -2,6 +2,11 @@
 // Single source of truth for all portfolio content.
 // Edit this file to update any section — no JSX changes needed.
 
+import dropNestImg from '../assets/DropNest.png';
+import coinPulseImg from '../assets/CoinPulse.png';
+import parkEaseImg from '../assets/ParkEase.png';
+import goVroomImg from '../assets/GoVroom.png';
+
 export const personalInfo = {
   name: "Anas Ghayas",
   title: "Mathematics & Computing | BIT Mesra",
@@ -41,7 +46,7 @@ export const projects = [
       "A full-stack price tracking platform for Amazon and Flipkart with automated price monitoring, historical price visualization, and target price alerts. Built with a Puppeteer-based scraping engine running automated CRON jobs every 6 hours and a normalized PostgreSQL database with Supabase Auth.",
     github: "https://github.com/anasghayas/DropNest",
     live: "https://drop-nest-three.vercel.app/",
-    image: null, // User will provide later
+    image: dropNestImg,
   },
   {
     id: 2,
@@ -55,7 +60,7 @@ export const projects = [
       "A real-time cryptocurrency dashboard tracking the top 100 coins with historical price charts, watchlist management, and multi-currency support. Integrated Firebase Auth with Cloud Firestore for real-time wishlist sync and CoinGecko API with centralized caching.",
     github: "https://github.com/anasghayas/CoinPulse",
     live: "https://coinpulsecrypto.netlify.app",
-    image: null,
+    image: coinPulseImg,
   },
   {
     id: 3,
@@ -69,7 +74,7 @@ export const projects = [
       "A full-stack parking management platform connecting slot owners with drivers, featuring three distinct user roles, real-time booking with dynamic pricing, and Cloudinary image uploads. Built with the MERN stack, JWT authentication, and role-based access control.",
     github: "https://github.com/anasghayas/ParkEase",
     live: "https://parkease-ecru.vercel.app/",
-    image: null,
+    image: parkEaseImg,
   },
   {
     id: 4,
@@ -83,7 +88,7 @@ export const projects = [
       "A comprehensive vehicle rental platform connecting customers with verified rental agencies, featuring multi-duration pricing, real-time booking management, and admin-controlled agency verification. Built on the MERN stack with Cloudinary integration and a premium dark-mode UI.",
     github: "https://github.com/anasghayas/VehicleRental",
     live: "https://go-vroom-umber.vercel.app/",
-    image: null,
+    image: goVroomImg,
   },
 ];
 

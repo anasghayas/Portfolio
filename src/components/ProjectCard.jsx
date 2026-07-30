@@ -7,15 +7,15 @@ export default function ProjectCard({ project }) {
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true, margin: "-50px" }}
       transition={{ duration: 0.5 }}
-      className="border border-[var(--border)] bg-[#fcfaf7]/50 backdrop-blur-sm p-6 hover:shadow-[var(--shadow-md)] hover:-translate-y-1 transition-all duration-300 flex flex-col md:flex-row gap-8 items-stretch"
+      className="border border-[var(--border)] bg-[#fcfaf7]/50 backdrop-blur-sm p-6 hover:shadow-[var(--shadow-md)] hover:-translate-y-1 transition-all duration-300 flex flex-col md:flex-row gap-8 items-start"
     >
       {/* Image Area / Placeholder */}
-      <div className="w-full md:w-[240px] shrink-0 aspect-[4/3] md:aspect-square bg-[var(--bg-secondary)] border border-[var(--border)] flex items-center justify-center overflow-hidden relative group">
+      <div className="w-full md:w-[280px] shrink-0 aspect-[16/9] bg-[var(--bg-secondary)] border border-[var(--border)] flex items-center justify-center overflow-hidden relative group shadow-[var(--shadow-sm)]">
         {project.image ? (
           <img 
             src={project.image} 
             alt={project.name} 
-            className="w-full h-full object-cover" 
+            className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105" 
           />
         ) : (
           <div className="absolute inset-0 flex flex-col items-center justify-center text-[var(--text-muted)] font-mono text-xs text-center px-4 select-none">
