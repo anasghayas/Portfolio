@@ -4,6 +4,8 @@ import Hero from './components/Hero'
 import About from './components/About'
 import Skills from './components/Skills'
 import Projects from './components/Projects'
+import Achievements from './components/Achievements'
+import Experience from './components/Experience'
 
 function App() {
   return (
@@ -14,9 +16,9 @@ function App() {
         <About />
         <Skills />
         <Projects />
+        <Achievements />
+        <Experience />
         {/* Dummy sections so scroll works */}
-        <section id="achievements" className="h-screen flex items-center justify-center font-mono text-2xl text-[var(--text-primary)]">04. Achievements (Coming Soon)</section>
-        <section id="experience" className="h-screen bg-[var(--bg-card)] flex items-center justify-center font-mono text-2xl text-[var(--text-primary)]">05. Experience (Coming Soon)</section>
         <section id="contact" className="h-screen flex items-center justify-center font-mono text-2xl text-[var(--text-primary)]">06. Contact (Coming Soon)</section>
       </main>
     </>
