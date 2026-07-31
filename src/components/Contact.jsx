@@ -98,9 +98,9 @@ export default function Contact() {
         <div>
           DESIGNED & BUILT BY ANAS GHAYAS © {currentYear}
         </div>
-        <div>
+        {/* <div>
           STAMP // {formattedDate}
-        </div>
+        </div> */}
       </div>
     </section>
   );
