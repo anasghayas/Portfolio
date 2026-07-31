@@ -35,29 +35,29 @@ export default function About() {
           </div>
           
           <div className="space-y-3">
-            <div className="flex justify-between">
+            <div className="flex flex-col sm:flex-row sm:justify-between gap-1 sm:gap-4">
               <span className="text-[var(--text-muted)]">LOCATION:</span>
-              <span className="text-[var(--text-primary)] font-bold">{personalInfo.location}</span>
+              <span className="text-[var(--text-primary)] font-bold text-left sm:text-right">{personalInfo.location}</span>
             </div>
             
-            <div className="flex justify-between">
+            <div className="flex flex-col sm:flex-row sm:justify-between gap-1 sm:gap-4">
               <span className="text-[var(--text-muted)]">EMAIL:</span>
               <a 
                 href={`mailto:${personalInfo.email}`} 
-                className="text-[var(--accent)] hover:underline font-bold"
+                className="text-[var(--accent)] hover:underline font-bold break-all text-left sm:text-right"
               >
                 {personalInfo.email}
               </a>
             </div>
 
-            <div className="flex justify-between">
+            <div className="flex flex-col sm:flex-row sm:justify-between gap-1 sm:gap-4">
               <span className="text-[var(--text-muted)]">PHONE:</span>
-              <span className="text-[var(--text-primary)] font-bold">{personalInfo.phone}</span>
+              <span className="text-[var(--text-primary)] font-bold text-left sm:text-right">{personalInfo.phone}</span>
             </div>
 
-            <div className="flex justify-between">
+            <div className="flex flex-col sm:flex-row sm:justify-between gap-1 sm:gap-4">
               <span className="text-[var(--text-muted)]">DISCIPLINE:</span>
-              <span className="text-[var(--text-primary)] font-bold">MATH & COMPUTING</span>
+              <span className="text-[var(--text-primary)] font-bold text-left sm:text-right">MATH & COMPUTING</span>
             </div>
           </div>
         </div>
