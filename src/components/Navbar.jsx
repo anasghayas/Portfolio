@@ -75,7 +75,7 @@ export default function Navbar() {
             <button
               key={link.id}
               onClick={() => scrollToSection(link.id)}
-              className="font-mono text-sm uppercase text-[var(--text-secondary)] hover:text-[var(--accent)] transition-colors"
+              className="font-mono text-sm uppercase text-[var(--text-secondary)] hover:text-[var(--accent)] transition-colors cursor-pointer"
             >
               <span className="text-[var(--accent)] mr-1">0{index + 1}.</span>
               {link.name}
@@ -85,7 +85,7 @@ export default function Navbar() {
 
         {/* Mobile Toggle */}
         <button 
-          className="md:hidden text-[var(--text-primary)]"
+          className="md:hidden text-[var(--text-primary)] cursor-pointer"
           onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
         >
           {mobileMenuOpen ? <X size={24} /> : <Menu size={24} />}
@@ -106,7 +106,7 @@ export default function Navbar() {
                 <button
                   key={link.id}
                   onClick={() => scrollToSection(link.id)}
-                  className="font-mono text-sm uppercase text-left py-2 text-[var(--text-secondary)] hover:text-[var(--accent)]"
+                  className="font-mono text-sm uppercase text-left py-2 text-[var(--text-secondary)] hover:text-[var(--accent)] cursor-pointer"
                 >
                   <span className="text-[var(--accent)] mr-2">0{index + 1}.</span>
                   {link.name}
