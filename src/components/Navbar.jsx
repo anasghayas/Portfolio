@@ -46,8 +46,17 @@ export default function Navbar() {
       animate={{ y: 0, opacity: 1 }}
       transition={{ duration: 0.5, ease: 'easeOut' }}
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-        isScrolled ? 'bg-[var(--bg-primary)]/80 backdrop-blur-md shadow-[var(--shadow-sm)]' : 'bg-transparent'
+        isScrolled ? 'border-b border-[#c4b89a]/35 shadow-[var(--shadow-sm)]' : 'border-b border-transparent'
       }`}
+      style={isScrolled ? {
+        backgroundColor: 'rgba(252, 250, 247, 0.65)',
+        backdropFilter: 'blur(10px)',
+        WebkitBackdropFilter: 'blur(10px)'
+      } : {
+        backgroundColor: 'transparent',
+        backdropFilter: 'none',
+        WebkitBackdropFilter: 'none'
+      }}
     >
       <div className="max-w-[1100px] mx-auto px-6 h-16 flex items-center justify-between">
         {/* Logo */}
